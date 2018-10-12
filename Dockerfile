@@ -29,7 +29,7 @@ RUN echo '' >> /etc/profile \
 RUN wget http://central.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.7.v20150116/jetty-distribution-9.2.7.v20150116.tar.gz
 RUN tar zxvf jetty-distribution-9.2.7.v20150116.tar.gz && mv /jetty-distribution-9.2.7.v20150116 /jetty && rm -rf /jetty/webapps/*
 
-RUN wget http://mirrors.shu.edu.cn/apache/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.tar.gz
+RUN wget http://archive.apache.org/dist/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.tar.gz
 RUN tar zxvf apache-maven-3.5.2-bin.tar.gz && mv /apache-maven-3.5.2 /maven
 
 RUN git clone https://git.oschina.net/dl88250/symphony /sym
